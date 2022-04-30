@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Linkedin</title>
+    <style>
+        .bg-grey {background-color: #efefef}
+        .border-r1 {border-radius: 20px;}
+        .bg-white {background-color: white;}
+        .text-sm {font-size: 12px;}
+        .color-foto {color: #70B5F9;}
+        .color-video {color: #7FC15E;}
+        .color-etkinlik {color: #E7A33E}
+        .color-yaziyaz { color: #F5987E;}
+        .line-sm {line-height: 15px;}
+        .font-md {font-size: 15px;}
+    </style>
+</head>
+<body>
+    
+    
+
+    <!-- search input ve navbar burada başlayacak   -->
+    <header class="border-bottom d-none d-sm-none d-md-none d-lg-block bg-white"> 
+        <div class="container mt-2">
+            <div class="row">
+               
+               
+                <div class="col-md-4 py-2">
+                    
+                    <div class="row">
+                        <div class="col-md-6">  <i class="fa-brands fa-linkedin fa-3x text-primary float-end"></i></div>
+                        <div class="col-md-6"> 
+                            
+                            <div class="input-group mt-1">
+                                <span class="input-group-text bg-white border-r1" id="inputGroup-sizing-default"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <input type="text" class="form-control border-r1" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Aramaya Başla">
+                            </div>
+                        </div>
+                    </div>
+                
+
+
+
+
+                </div>
+                
+               
+                <div class="col-md-6 border-end">
+                    <ul class="list-inline float-end">
+                        <li class="list-inline-item text-center border-bottom border-dark"> <i class="fa-solid fa-house"></i>
+                        <br> Ana Sayfa
+                        </li>
+                        <li class="list-inline-item text-center text-secondary"> <i class="fa-solid fa-people-group"></i>
+                        <br> Ağım
+                        </li>
+                        <li class="list-inline-item text-center text-secondary">  <i class="fa-solid fa-briefcase"></i>
+                        <br> İş İlanları
+                        </li>
+                        <li class="list-inline-item text-center text-secondary"> <i class="fa-solid fa-message"></i>
+                        <br> Mesajlarım
+                        </li>
+                        <li class="list-inline-item text-center text-secondary"> <i class="fa-solid fa-bell"></i>
+                        <br> Bildirimler    
+                        </li>
+                        <li class="list-inline-item text-center"> <img style="height: 20px;" class="rounded-circle" src="https://media-exp1.licdn.com/dms/image/C4D03AQGPw-V3wjEArg/profile-displayphoto-shrink_100_100/0/1591742182820?e=1656547200&v=beta&t=Y-63_kfOfFHDPEIrkME-X1vwbW_ClcBLbyygUMPUq7c" alt="">
+                        <br> Ben  
+                        </li>
+                    </ul>
+
+                  
+
+
+
+                </div>
+                
+                
+                <div class="col-md-2">
+                    <ul class="list-inline">
+                        <li class="list-inline-item text-center text-secondary"> <i class="fa-solid fa-table-cells"></i>
+                            <br> İş
+                        </li>
+                        <li class="list-inline-item text-center text-secondary"> <i class="fa-solid fa-suitcase"></i></i>
+                            <br> İş İlanı Yayınla
+                        </li>
+                    
+                    </ul>
+                  
+        </div>
+
+        
+
+
+    </header>
+ <!-- search input ve navbar burada bitecek  -->
+
+ 
+ <!-- medium ve small ekranlardaki header başlangıcı -->
+ <header class="d-sm-block d-md-block d-lg-none">
+
+    <div class="container">
+        <!-- ilk row başlangıcı -->
+        <div class="row border-bottom">
+            
+            <div class="col-md-12  py-3">
+                <div class="row">
+                    <div class="col-md-1 ">  <i class="fa-brands fa-linkedin text-primary fa-3x ms-2"></i>    
+                    </div>
+                    
+                    <div class="col-md-11"> 
+                        <div class="input-group mt-1">
+                            <span class="input-group-text bg-white border-r1" id="inputGroup-sizing-default"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" class="form-control border-r1" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Aramaya Başla">
+                        </div>     
+                    </div>
+                </div>
+               
+               
+               
+               
+              
+            
+            </div>
+           
+           
+         </div>  <!-- ilk row bitişi -->
+
+
+
+         <!-- ikinci row başlangıcı -->
+
+         <div class="row border-bottom mt-1">
+            
+            <div class="col-md-12 md-text-center d-none d-sm-none d-md-block">
+                <ul class="list-inline">
+                    <li class="list-inline-item text-center"> <i class="fa-solid fa-house"></i>
+                        <br> Ana Sayfa
+                    </li>
+                    <li class="list-inline-item text-center text-secondary"> <i class="fa-solid fa-people-group"></i>
+                        <br> Ağım
+                    </li>
+                    <li class="list-inline-item text-center text-secondary">  <i class="fa-solid fa-briefcase"></i>
+                        <br> İş İlanları
+                    </li>
+                    <li class="list-inline-item text-center text-secondary"> <i class="fa-solid fa-message"></i>
+                        <br> Mesajlarım
+                    </li>
+                    <li class="list-inline-item text-center text-secondary"> <i class="fa-solid fa-bell"></i>
+                        <br> Bildirimler   
+                    </li>
+                    <li class="list-inline-item text-center "> <img style="height: 20px;" class="rounded-circle"  src="https://media-exp1.licdn.com/dms/image/C4D03AQGPw-V3wjEArg/profile-displayphoto-shrink_100_100/0/1591742182820?e=1656547200&v=beta&t=Y-63_kfOfFHDPEIrkME-X1vwbW_ClcBLbyygUMPUq7c" alt="">
+                        <br> Ben  
+                    </li> 
+                    <li class="list-inline-item text-center text-secondary"> <i class="fa-solid fa-table-cells"></i>
+                        <br> İş
+                    </li>
+                    <li class="list-inline-item text-center text-secondary"> <i class="fa-solid fa-suitcase"></i></i>
+                        <br> İş İlanı Yayınla
+                    </li>
+
+                  
+           
+         </div>
+         <!-- ikinci row bitişi -->
+
+           <!-- sm ekranlar için yapılmış navbarın başlangıcı -->
+           <div class="col-md-12 md-text-center d-sm-block d-md-none">
+            <ul class="list-inline">
+                <li class="list-inline-item text-center"> <i class="fa-solid fa-house"></i>
+                  
+                </li>
+                <li class="list-inline-item text-center text-secondary"> <i class="fa-solid fa-people-group"></i>
+                    
+                </li>
+                <li class="list-inline-item text-center text-secondary">  <i class="fa-solid fa-briefcase"></i>
+                    
+                </li>
+                <li class="list-inline-item text-center text-secondary"> <i class="fa-solid fa-message"></i>
+                    
+                </li>
+                <li class="list-inline-item text-center text-secondary"> <i class="fa-solid fa-bell"></i>
+                     
+                </li>
+                <li class="list-inline-item text-center "> <img style="height: 20px;" class="rounded-circle"  src="https://media-exp1.licdn.com/dms/image/C4D03AQGPw-V3wjEArg/profile-displayphoto-shrink_100_100/0/1591742182820?e=1656547200&v=beta&t=Y-63_kfOfFHDPEIrkME-X1vwbW_ClcBLbyygUMPUq7c" alt="">
+                   
+                </li> 
+                <li class="list-inline-item text-center text-secondary"> <i class="fa-solid fa-table-cells"></i>
+                   
+                </li>
+                <li class="list-inline-item text-center text-secondary"> <i class="fa-solid fa-suitcase"></i></i>
+                    
+                </li>
+</div>
+<!-- sm ekranlar için yapılmış navbarın bitişi -->
+   
+    
+    
+    
+        </div>
+        <!-- container bitişi -->
+
+
+
+ </header>
+ <!-- medium ve small ekranlardaki header bitişi -->
+
+
+
+
+
+
+
+<!-- section başlangıcı. Bütün gövde bu kısımın içerisinde bulunacak -->
+<section class="bg-grey">
+    <div class="container">
+        <div class="row">
+            
+            
+            <!-- sol aside kısmının başlangıcı -->
+            <aside class="col-md-2  mt-2 text-center ">
+                
+                
+                    <div class="row">
+                    
+                        <div class="col-md-12 border mt-3 bg-light border-r1">
+                        <img class="rounded-circle mt-3 bg-light" src="https://media-exp1.licdn.com/dms/image/C4D03AQGPw-V3wjEArg/profile-displayphoto-shrink_100_100/0/1591742182820?e=1656547200&v=beta&t=Y-63_kfOfFHDPEIrkME-X1vwbW_ClcBLbyygUMPUq7c" 
+                            alt="" >
+                        
+                        
+                        <p>  <a class="text-decoration-none text-dark" href=""> Ömer Can Hocaoğlu   </a>   </p>
+                    
+                        <p class="text-secondary border-bottom"> <small> Student at Kodluyoruz.org </small> </p>
+
+                        <p class="text-secondary text-start text-sm"> Profilini Kimler Görüntüledi? <span class="float-end text-primary">9</span>  </p>
+
+                        <p class="text-secondary text-start border-bottom text-sm"> Yayın Görüntülenme Sayısı <span class="float-end text-primary">150</span>  </p>
+                        
+                        <p class="mt-3 text-start text-secondary ">     
+                            <svg style="height: 15px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M336 0h-288C21.49 0 0 21.49 0 48v431.9c0 24.7 26.79 40.08 48.12 27.64L192 423.6l143.9 83.93C357.2 519.1 384 504.6 384 479.9V48C384 21.49 362.5 0 336 0zM336 452L192 368l-144 84V54C48 50.63 50.63 48 53.1 48h276C333.4 48 336 50.63 336 54V452z"/></svg>
+                            <span> <strong> Öğelerim </strong> </span>
+                            </p>
+                   
+                   
+                   
+                   
+                    </div>                    
+                
+                
+                </div>
+
+                 
+
+
+
+                <div class="row border  mt-3 bg-light border-r1 d-none d-sm-none d-md-block">
+                   
+                    <p class="mt-3 text-start text-secondary border-bottom bg-light p-2 "> Sayfalarım    </p>
+
+                    
+                        <div class="col-lg-3 col-md-12">
+                        <!-- <img class=" img-thumbnail w-100" src="https://picsum.photos/id/266/200" alt="">  -->  <!-- burada yapılmış ikinci resim çalışması vardır -->
+                        <img class=" img-thumbnail w-100" src="https://kablosuzbeyin.com/wp-content/uploads/2021/04/cropped-kablosuzbeyin-1.png" alt="">
+                    </div>
+
+                    <div class="col-lg-9 col-md-12 text-start">
+                        <p class="text-secondary"> <strong> Kablosuz Beyin </strong>  </p>
+                        <p>Sayfa Bildirimleri <span class="float-end text-primary">10</span></p>
+
+
+                    </div>
+                       
+                </div>
+
+
+                <div class="row mt-2 border text-start border-r1 bg-light d-none d-sm-none d-md-block sticky-top overflow-visible">
+                    <div class="col-md-12">
+                        <p>  <small> En Yeni   </small>   </p>
+                        <p class="text-secondary">  <strong>    #Kodluyoruz   </strong>    </p>
+                        <p class="text-secondary">  <strong>    #Front-end    </strong>    </p>
+                        <p class="text-secondary">  <strong>    #HTML   </strong></p>
+                        <p class="text-secondary">  <strong>  #CSS   </strong></p>
+                        <p class="text-secondary">  <strong>    #Bootstrap   </strong></p>
+                        <p class="mt-2 text-primary">   Gruplar </p>
+                        <p class="text-primary">    Etkinlikler  <span class="h4 float-end">+</span>  </p>
+                        <p class="text-primary">    Takip Edilen Hashtagler </p>
+                        <p class="text-secondary text-sm">  <strong>#Kodluyoruz   </strong>  </p>
+                        <p class="text-secondary border-bottom text-sm">  <strong>#Front-end    </strong> </p>
+                        <p class="text-center">  <strong> Daha fazla keşfet </strong>     </p>
+
+                        
+                    </div>
+                </div>
+
+                
+           
+           
+           
+           
+           
+                  
+
+                    
+
+                    
+                
+                
+            
+            
+
+            </aside>
+            <!-- sol aside kısmının bitişi -->
+            
+            
+            
+            
+            <!-- article kısmının başlangıcı. Ana akış burada olacak -->
+            <article class="col-lg-5 col-md-9 mt-4  ms-sm-0 ms-md-3 bg-grey">
+
+                <div class="border border-r1 bg-light p-3 d-sm-block d-md-none d-lg-block d-xl-none">
+                   <div class="row">
+                       
+                    <div class="col-md-2 ms-sm-0 sm-md-3 text-center ">
+                       
+                        <img class="rounded-circle   mt-3 text-center" src="https://media-exp1.licdn.com/dms/image/C4D03AQGPw-V3wjEArg/profile-displayphoto-shrink_100_100/0/1591742182820?e=1656547200&v=beta&t=Y-63_kfOfFHDPEIrkME-X1vwbW_ClcBLbyygUMPUq7c" 
+                        alt="" width="50px" height="50px">
+                       </div>
+                      
+                      
+                       <div class="col-md-8 text-center">
+                        
+
+                            <div class="input-group mt-3">
+                                <span class="input-group-text bg-white border-r1" id="inputGroup-sizing-default"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <input type="text" class="form-control border-r1" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Bir Gönderi Başlat">
+                            </div>
+                            
+                            
+                       </div>
+
+                       
+
+
+                   </div>
+
+                
+
+                    <div class=" row mt-4">
+              
+
+                    <div class="col-3 bg-white rounded-pill"> <a class="text-decoration-none text-dark text-sm" href=""> <small> <i class="fa-solid fa-photo-film color-foto"> </i>  Fotoğraf  </a> </small>    </div>
+                    <div class="col-3 bg-white rounded-pill"> <a class="text-decoration-none text-dark text-sm" href=""> <small> <i class="fa-brands fa-youtube color-video"> </i> Video  </a> </small>   </div>
+                    <div class="col-3 bg-white rounded-pill"> <a class="text-decoration-none text-dark text-sm"  href=""> <small> <i class="fa-solid fa-calendar color-etkinlik"> </i>  Etkinlik  </a> </small>  </div>
+                    <div class="col-3 bg-white rounded-pill"> <a class="text-decoration-none text-dark text-sm" href=""> <small> <i class="fa-solid fa-calendar color-yaziyaz"> </i> Yazı Yaz  </a> </small>   </div>
+                 
+
+
+
+                    </div>
+
+                   
+                   
+                </div>
+
+
+
+
+                <!-- xl ekranlar için olan ilk kısımın başlangıcı -->
+
+                <div class="border border-r1 bg-light p-3 d-none d-sm-none d-md-block d-lg-none d-xl-block">
+                    <div class="row">
+                        
+                     <div class="col-md-2 ms-sm-0 sm-md-3 text-center ">
+                        
+                         <img class="rounded-circle   mt-3 text-center" src="https://media-exp1.licdn.com/dms/image/C4D03AQGPw-V3wjEArg/profile-displayphoto-shrink_100_100/0/1591742182820?e=1656547200&v=beta&t=Y-63_kfOfFHDPEIrkME-X1vwbW_ClcBLbyygUMPUq7c" 
+                         alt="" width="50px" height="50px">
+                        </div>
+                       
+                       
+                        <div class="col-md-8 text-center">
+                         
+ 
+                             <div class="input-group mt-3">
+                                 <span class="input-group-text bg-white border-r1" id="inputGroup-sizing-default"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                 <input type="text" class="form-control border-r1" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Bir Gönderi Başlat">
+                             </div>
+                             
+                             
+                        </div>
+ 
+                        
+ 
+ 
+                    </div>
+ 
+                 
+ 
+                     <div class=" row mt-4">
+               
+ 
+                     <div class="col-3 bg-white rounded-pill"> <a class="text-decoration-none text-dark" href=""> <i class="fa-solid fa-photo-film color-foto"> </i> Fotoğraf </a>    </div>
+                     <div class="col-3 bg-white rounded-pill"> <a class="text-decoration-none text-dark" href=""> <i class="fa-brands fa-youtube color-video"> </i> Video  </a>   </div>
+                     <div class="col-3 bg-white rounded-pill"> <a class="text-decoration-none text-dark"  href="">   <i class="fa-solid fa-calendar color-etkinlik"> </i>  Etkinlik  </a>   </div>
+                     <div class="col-3 bg-white rounded-pill"> <a class="text-decoration-none text-dark" href="">  <i class="fa-solid fa-calendar color-yaziyaz"> </i> Yazı Yaz  </a>   </div>
+                  
+ 
+ 
+ 
+                     </div>
+ 
+                    
+                    
+                 </div>
+
+
+                <!-- xl ekranlar için olan ilk kısmın bitişi -->
+                
+                
+                
+                <!--post ilk kısım başlangıcı  -->
+                <div class="row bg-light border-r1 mt-2 ms-1 me-1">
+                    <div class="col-md-1 mt-2">
+                        <div>
+                            <img class="rounded-circle" src="https://media-exp1.licdn.com/dms/image/C4E03AQGiWpTUewQ76Q/profile-displayphoto-shrink_100_100/0/1613923672228?e=1656547200&v=beta&t=6T-ES1Lck50x3IubxO4qcKgzpdbC88l6E2Y03nQtAK4"
+                            alt="" width="50px" height="50px"> 
+
+                            
+                            
+
+                        </div>
+                        
+
+                        
+                    </div> 
+                    <div class="col-md-10 ms-sm-0 ms-md-4 mt-2">
+                        <div class="text-sm line-sm"> <p> <a class="text-decoration-none text-dark" href=""> <strong>   David J. Malan  </strong> </a>     <span class="float-end"><i class="fa-solid fa-ellipsis"></i></span>   <br>
+                            <small class="text-secondary text-sm line-sm">I teach CS50 25a </small> <br>  
+                            <small class="text-secondary text-sm line-sm">  25a <i class="fa-solid fa-earth-africa"></i> </small>
+                            </p>  
+                        </div>  
+                      
+                   
+                    </div>
+
+                    <p class="font-md"> They have done great things! Tebrikler Kodluyoruz! </p>
+
+                    <div>
+                        <img class="w-100" src="https://pbs.twimg.com/media/Em2_xBbXUAEVDx1.jpg" 
+                        alt="">
+
+                    </div>
+                    <!-- fotonun altındaki like butonları ve yorum sayısı başlangıcı -->
+                    <div class="border-bottom">
+                        <span>  <img src="https://static-exp1.licdn.com/sc/h/d310t2g24pvdy4pt1jkedo4yb" 
+                                alt="">   
+                        </span>
+
+                        <span>      
+                            <img src="https://static-exp1.licdn.com/sc/h/5thsbmikm6a8uov24ygwd914f" 
+                            alt="">
+                        </span>
+
+                        <span>  
+                            <img src="https://static-exp1.licdn.com/sc/h/7fx9nkd7mx8avdpqm5hqcbi97" 
+                            alt="">   
+
+                        </span>
+
+                        <span class="text-sm">
+                            958
+                        </span>
+
+
+                    </div>
+                      <!-- fotonun altındaki like butonları ve yorum sayısı bitişi -->
+
+                    
+                      <!-- like butonlarının altındaki beğeni butonlarının başlangıcı -->
+                    <div class="row p-2">
+                        
+                    
+                    <div class="col-3 text-center d-none d-sm-none d-md-block"> <a class="text-decoration-none text-secondary" href="">   <i class="fa-solid fa-thumbs-up fa-1x"></i> Beğen </a>   </div>
+                    <div class="col-3  text-center d-none d-sm-none d-md-block"> <a class="text-decoration-none text-secondary" href="">   <i class="fa-solid fa-comment-dots"></i> Yorum Yap </a> </div>
+                    <div class="col-3  text-center d-none d-sm-none d-md-block"> <a class="text-decoration-none text-secondary" href="">   <i class="fa-solid fa-share"></i> Paylaş </a> </div>
+                    <div class="col-3  text-center d-none d-sm-none d-md-block"> <a class="text-decoration-none text-secondary" href="">   <i class="fa-solid fa-paper-plane"></i> Gönder </a> </div>
+
+                    <!-- sm ve ekranlar için yapılmış kısım başlangıcı -->
+
+                    <div class="col-3 text-center  d-sm-block d-md-none"> <a class="text-decoration-none text-secondary" href="">   <i class="fa-solid fa-thumbs-up fa-1x"></i> </a>   </div>
+                    <div class="col-3  text-center d-sm-block d-md-none"> <a class="text-decoration-none text-secondary" href="">   <i class="fa-solid fa-comment-dots"></i>  </a> </div>
+                    <div class="col-3  text-center d-sm-block d-md-none"> <a class="text-decoration-none text-secondary" href="">   <i class="fa-solid fa-share"></i> </a> </div>
+                    <div class="col-3  text-center d-sm-block d-md-none"> <a class="text-decoration-none text-secondary" href="">   <i class="fa-solid fa-paper-plane"></i> </a> </div>
+                    
+                    <!-- sm ekranlar için yapılmış kısım sonu -->
+                    
+                    
+                    
+                    </div>
+                    <!-- like butonlarının altındaki beğeni butonlarının başlangıcı -->
+
+
+
+                </div> 
+                <!--post ilk kısım bitişi -->
+
+
+
+
+
+                 <!-- 2. post ilk kısım başlangıcı  -->
+                 <div class="row bg-light border-r1 mt-2 ms-1 me-1">
+                    <div class="col-md-1 mt-2">
+                        <div>
+                            <img class="rounded-circle" src="data:image/jpeg;base64,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"
+                            alt="" width="50px" height="50px"> 
+
+                            
+                            
+
+                        </div>
+                        
+
+                        
+                    </div> 
+                    <div class="col-md-10 ms-sm-0 ms-md-4 mt-2">
+                        <div class="text-sm line-sm"> <p> <a class="text-decoration-none text-dark" href=""> <strong>   Ozan Halis İLTER  </strong> </a>     <span class="float-end"><i class="fa-solid fa-ellipsis"></i></span>   <br>
+                            <small class="text-secondary text-sm line-sm">Team Leader at YetGen | CodeCraft | Kablosuz Beyin | IEEE MEF... </small> <br>  
+                            <small class="text-secondary text-sm line-sm">  1s <i class="fa-solid fa-earth-africa"></i> </small>
+                            </p>  
+                        </div>  
+                      
+                   
+                    </div>
+
+                    <p class="font-md"> Erhan Erkut hocamız ile birlikte YetGen'de harika şeyler yapmak için geliyoruz!
+
+                    </p>
+
+                    <div>
+                        <img class="w-100" src="https://miro.medium.com/max/1080/1*gdDWFSvHDt57DS2zsh_0Bg.png" 
+                        alt="">
+
+                    </div>
+                    <!-- fotonun altındaki like butonları ve yorum sayısı başlangıcı -->
+                    <div class="border-bottom">
+                        <span>  <img src="https://static-exp1.licdn.com/sc/h/d310t2g24pvdy4pt1jkedo4yb" 
+                                alt="">   
+                        </span>
+
+                        <span>      
+                            <img src="https://static-exp1.licdn.com/sc/h/5thsbmikm6a8uov24ygwd914f" 
+                            alt="">
+                        </span>
+
+                        <span>  
+                            <img src="https://static-exp1.licdn.com/sc/h/7fx9nkd7mx8avdpqm5hqcbi97" 
+                            alt="">   
+
+                        </span>
+
+                        <span class="text-sm">
+                            210
+                        </span>
+
+
+                    </div>
+                      <!-- fotonun altındaki like butonları ve yorum sayısı bitişi -->
+
+                    
+                      <!-- like butonlarının altındaki beğeni butonlarının başlangıcı -->
+                    <div class="row p-2">
+                       
+                    
+                    <div class="col-3 text-center d-none d-sm-none d-md-block"> <a class="text-decoration-none text-secondary" href="">   <i class="fa-solid fa-thumbs-up fa-1x"></i> Beğen </a>   </div>
+                    <div class="col-3  text-center d-none d-sm-none d-md-block"> <a class="text-decoration-none text-secondary" href="">   <i class="fa-solid fa-comment-dots"></i> Yorum Yap </a> </div>
+                    <div class="col-3  text-center d-none d-sm-none d-md-block"> <a class="text-decoration-none text-secondary" href="">   <i class="fa-solid fa-share"></i> Paylaş </a> </div>
+                    <div class="col-3  text-center d-none d-sm-none d-md-block"> <a class="text-decoration-none text-secondary" href="">   <i class="fa-solid fa-paper-plane"></i> Gönder </a> </div>
+
+                    <!-- sm ekranlar için yapılmış kısım başlangıcı -->
+
+                    <div class="col-3 text-center  d-sm-block d-md-none"> <a class="text-decoration-none text-secondary" href="">   <i class="fa-solid fa-thumbs-up fa-1x"></i> </a>   </div>
+                    <div class="col-3  text-center d-sm-block d-md-none"> <a class="text-decoration-none text-secondary" href="">   <i class="fa-solid fa-comment-dots"></i>  </a> </div>
+                    <div class="col-3  text-center d-sm-block d-md-none"> <a class="text-decoration-none text-secondary" href="">   <i class="fa-solid fa-share"></i> </a> </div>
+                    <div class="col-3  text-center d-sm-block d-md-none"> <a class="text-decoration-none text-secondary" href="">   <i class="fa-solid fa-paper-plane"></i> </a> </div>
+                    
+                    <!-- sm ekranlar için yapılmış kısım sonu -->
+                    
+                    
+                    
+                    </div>
+                    <!-- like butonlarının altındaki beğeni butonlarının başlangıcı -->
+
+
+
+                </div> 
+                <!--2.post ilk kısım bitişi -->
+
+
+
+                   <!-- 3. post ilk kısım başlangıcı  -->
+                   <div class="row bg-light border-r1 mt-2 ms-1 me-1">
+                    <div class="col-md-1 mt-2">
+                        <div>
+                            <img class="rounded-circle" src="https://media-exp1.licdn.com/dms/image/C5603AQFOc4FfGSHrgw/profile-displayphoto-shrink_400_400/0/1619210485825?e=1656547200&v=beta&t=djlpsxLFesF62n6_hsrBxsakDOsNY0R7_uWpbzBH6Kg"
+                            alt="" width="50px" height="50px"> 
+
+                            
+                            
+
+                        </div>
+                        
+
+                        
+                    </div> 
+                    <div class="col-md-10 ms-sm-0 ms-md-4 mt-2">
+                        <div class="text-sm line-sm"> <p> <a class="text-decoration-none text-dark" href=""> <strong>   Ramazan Sancar  </strong> </a>     <span class="float-end"><i class="fa-solid fa-ellipsis"></i></span>   <br>
+                            <small class="text-secondary text-sm line-sm">Co-Founder at Kablosuz Beyin | Intern & Community Lead at Kod... </small> <br>  
+                            <small class="text-secondary text-sm line-sm">  25a <i class="fa-solid fa-earth-africa"></i> </small>
+                            </p>  
+                        </div>  
+                      
+                   
+                    </div>
+
+                    <p class="font-md"> Cat Özel Harekat'a katılmak isteyenleri şöyle alalım.. </p>
+
+                    <div>
+                        <img class="w-100" src="https://i.pinimg.com/originals/f2/c3/e3/f2c3e3626de64860500f712938fe5bf4.jpg" 
+                        alt="">
+
+                    </div>
+                    <!-- fotonun altındaki like butonları ve yorum sayısı başlangıcı -->
+                    <div class="border-bottom">
+                        <span>  <img src="https://static-exp1.licdn.com/sc/h/d310t2g24pvdy4pt1jkedo4yb" 
+                                alt="">   
+                        </span>
+
+                        <span>      
+                            <img src="https://static-exp1.licdn.com/sc/h/5thsbmikm6a8uov24ygwd914f" 
+                            alt="">
+                        </span>
+
+                        <span>  
+                            <img src="https://static-exp1.licdn.com/sc/h/7fx9nkd7mx8avdpqm5hqcbi97" 
+                            alt="">   
+
+                        </span>
+
+                        <span class="text-sm">
+                            224
+                        </span>
+
+
+                    </div>
+                      <!-- fotonun altındaki like butonları ve yorum sayısı bitişi -->
+
+                    
+                      <!-- like butonlarının altındaki beğeni butonlarının başlangıcı -->
+                    <div class="row p-2">
+                       
+                    
+                    <div class="col-3 text-center d-none d-sm-none d-md-block"> <a class="text-decoration-none text-secondary" href="">   <i class="fa-solid fa-thumbs-up fa-1x"></i> Beğen </a>   </div>
+                    <div class="col-3  text-center d-none d-sm-none d-md-block"> <a class="text-decoration-none text-secondary" href="">   <i class="fa-solid fa-comment-dots"></i> Yorum Yap </a> </div>
+                    <div class="col-3  text-center d-none d-sm-none d-md-block"> <a class="text-decoration-none text-secondary" href="">   <i class="fa-solid fa-share"></i> Paylaş </a> </div>
+                    <div class="col-3  text-center d-none d-sm-none d-md-block"> <a class="text-decoration-none text-secondary" href="">   <i class="fa-solid fa-paper-plane"></i> Gönder </a> </div>
+
+                    <!-- sm ekranlar için yapılmış kısım başlangıcı -->
+
+                    <div class="col-3 text-center  d-sm-block d-md-none"> <a class="text-decoration-none text-secondary" href="">   <i class="fa-solid fa-thumbs-up fa-1x"></i> </a>   </div>
+                    <div class="col-3  text-center d-sm-block d-md-none"> <a class="text-decoration-none text-secondary" href="">   <i class="fa-solid fa-comment-dots"></i>  </a> </div>
+                    <div class="col-3  text-center d-sm-block d-md-none"> <a class="text-decoration-none text-secondary" href="">   <i class="fa-solid fa-share"></i> </a> </div>
+                    <div class="col-3  text-center d-sm-block d-md-none"> <a class="text-decoration-none text-secondary" href="">   <i class="fa-solid fa-paper-plane"></i> </a> </div>
+                    
+                    <!-- sm ekranlar için yapılmış kısım sonu -->
+                    
+                    
+                    
+                    </div>
+                    <!-- like butonlarının altındaki beğeni butonlarının başlangıcı -->
+
+
+
+                </div> 
+                <!--3.post ilk kısım bitişi -->
+
+                
+                
+                   
+            </article>
+            <!-- article kısmının bitişi -->
+            
+            
+            
+            
+            
+            
+            
+            <!-- sağ aside kısmının başlangıcı -->
+            <aside class="col-lg-4 mt-4 ms-1  d-none d-sm-none d-md-none d-lg-block">
+                <div class="border border-r1 bg-light">
+                    <p class="ms-1 mt-3">  <span class="h6"> Akışınıza ekleyin </span> 
+                        <span class="float-end me-1">   <i class="fa-solid fa-circle-info"> </i>    </span> </p> 
+
+                    <div class="row">
+               
+                            <div class="col-lg-12"> 
+                                <div class="row">
+                                        <div class="col-lg-8"> 
+                                        <img class="ms-2 rounded-circle" src="https://codecraft.tv/assets/images/site/logo-tall.png" 
+                                        alt="" width="60" height="40" > 
+
+                                        <span> <strong> Codecraft </strong>  </span>
+                                        
+                                        
+
+                                        </div>
+                                    
+                                     
+                                    
+                               
+                               
+                               
+                                        <div class="col-lg-4"> 
+                                        <button type="button" class="btn btn-outline-info border-r1 text-sm"><strong> +Takip Et </strong></button> 
+
+                                        </div>
+                                </div>
+
+
+
+                         </div>
+                            
+                            
+                            
+                            <div class="col-lg-12">
+                                <div class="row">
+                                        <div class="col-lg-8"> 
+                                        <img class="ms-2 rounded-circle" src="https://pbs.twimg.com/profile_images/1347486915784830978/pUN5K_jL_400x400.jpg" 
+                                        alt="" width="60" height="40" > 
+
+                                        <span> <strong> Podfresh </strong>   </span>
+                                        
+                                        
+
+                                        </div>
+                                    
+                                    
+                                    
+                               
+                               
+                               
+                                        <div class="col-lg-4"> 
+                                        <button type="button" class="btn btn-outline-info border-r1 text-sm"> <strong> +Takip Et </strong> </button> 
+
+                                        </div>
+                                </div>
+
+
+
+                            </div>
+
+
+                            <div class="col-lg-12">
+                                <div class="row">
+                                        <div class="col-lg-8"> 
+                                        <img class="ms-2 rounded-circle" src="https://media-exp1.licdn.com/dms/image/C560BAQE7LQ_GtQ4VDQ/company-logo_100_100/0/1644003405950?e=2147483647&v=beta&t=nSinCwslu-AfZ1kfci-36nJbVcW7ggeuRZjmh9gtNUc" 
+                                        alt="" width="60" height="40" > 
+
+                                        <span> <strong> Navlungo </strong>     </span>
+                                        
+                                        
+
+                                        </div>
+                                    
+                                     
+                                    
+                               
+                               
+                               
+                                        <div class="col-lg-4"> 
+                                        <button type="button" class="btn btn-outline-info border-r1 text-sm"> <strong> +Takip Et </strong> </button> 
+
+                                        </div>
+                                </div>
+
+
+
+                            </div>
+                            
+                            
+                            
+                            
+                            
+                        </div>
+
+                
+                
+                
+                
+                
+                
+                
+                </div>
+
+                
+                <!--  -->
+                <div class="border border-bottom border-r1 bg-light mt-2">
+                    <p class="mt-2 ms-3">Bugünün en çok izlenen eğitimleri    
+                        <span> <i class="fa-solid fa-circle-info float-end me-2 mt-1"> </i>     </span>     </p>
+                        <ol class="border-bottom">
+                            <li> The Six Morning Habits of Perf... <br>
+                                <span class="text-secondary"> <small> Pete Mocakatais | How to be awesome at you... </small>  </span>
+                                  
+                            </li>
+                            
+                            <li> 
+                                Onconscious Blas
+                                                 <br>
+                                <span class="text-secondary"> <small> Stacey Gordon </small>  </span>      
+                            </li>
+                            
+                            <li> 
+                                Critical Thinking for Better Judgme...
+                                                                     <br>
+                                <span class="text-secondary"> <small> Becki Saltzman</small>  </span>     
+                            </li>
+                        </ol>
+
+                    <p class="ms-3 text-primary"> Linkedin Learning'de daha fazlasını göster </p>
+                
+                
+                
+                
+                </div>
+                <!--  -->
+                <div class="sticky-top overflow-visible">
+                    <div class="mt-2 text-center text-primary"> 
+                        <a class="text-decoration-none" href=""> <small> Hakkında </small> </a> 
+                        <a class="text-decoration-none ms-2" href=""> <small>Erişebilirlik </small> </a>
+                        <a class="text-decoration-none ms-2" href=""> <small> Yardım Merkezi </small> </a> 
+                    </div>
+
+                    
+
+                    <div class="mt-2 text-center text-primary"> 
+                        <a class="text-decoration-none" href=""> <small> Gizlilik ve Koşullar </small> </a> 
+                        <a class="text-decoration-none ms-2" href=""> <small> Reklam Tercihleri </small> </a>
+                    </div>
+
+                    <div class="mt-2 text-center text-primary"> <a class="text-decoration-none" href="">Reklam </a> </div>
+
+                    <div class="text-center"> <img src="https://www.logo.wine/a/logo/LinkedIn/LinkedIn-Logo.wine.svg" alt="" width="80" height="60">
+                    <span>Linkedin Corporation © 2022</span>
+                    
+                    </div>
+                </div>
+
+           
+           
+           
+            </aside>
+            <!-- sağ aside kısmının bitisşi -->
+        </div>
+        <!-- row kısmının bitişi -->
+   
+   
+    </div>
+    <!-- container kısmının bitişi -->
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+<!-- section bitişi -->
+
+<footer class="d-none d-sm-none d-md-block d-lg-block d-xl-none" style="max-width: 300px;">
+    <div class="row">
+        <div class="col-md-6 offset-md-6 fixed-bottom">
+           
+                <div class="row">
+                    <div class="col-md-2 float-end bg-white">
+                        <img class="rounded-circle mt-3 bg-light" src="https://media-exp1.licdn.com/dms/image/C4D03AQGPw-V3wjEArg/profile-displayphoto-shrink_100_100/0/1591742182820?e=1656547200&v=beta&t=Y-63_kfOfFHDPEIrkME-X1vwbW_ClcBLbyygUMPUq7c" 
+                            alt="" width="50px" height="50px" >
+                            
+
+                    </div>
+
+
+                    <div class="col-md-4 float-start bg-white">
+                        
+                            <p class="mt-4"> <strong> Mesajlaşma </strong></p>
+
+                    </div>
+                    
+                    <div class="col-md-3 bg-white float-start">
+                        <div class="mt-4">
+                        <i class="fa-solid fa-pen-to-square"></i>
+
+                        <i class="fa-solid fa-ellipsis ms-2"></i>
+
+                        <i class="fa-solid fa-angle-up ms-2"></i>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+
+</footer>
+
+<!-- xl ekranlar için yapılmış messenger footerı burada başlayacak -->
+
+<footer class="d-none d-sm-none d-md-none d-lg-none d-xl-block" style="max-width: 300px;">
+    <div class="row">
+        <div class="col-md-6 offset-md-8 fixed-bottom">
+           
+                <div class="row">
+                    <div class="col-md-3 float-end bg-white d-flex">
+                        <img class="rounded-circle mt-3 bg-light" src="https://media-exp1.licdn.com/dms/image/C4D03AQGPw-V3wjEArg/profile-displayphoto-shrink_100_100/0/1591742182820?e=1656547200&v=beta&t=Y-63_kfOfFHDPEIrkME-X1vwbW_ClcBLbyygUMPUq7c" 
+                            alt="" width="50px" height="50px" >
+                            <span class="ms-2 mt-4"><strong> Mesajlaşma </strong>  </span>
+
+                    </div>
+                    
+                    <div class="col-md-2 bg-white float-start">
+                        <div class="mt-4">
+                        <i class="fa-solid fa-pen-to-square"></i>
+
+                        <i class="fa-solid fa-ellipsis ms-2"></i>
+
+                        <i class="fa-solid fa-angle-up ms-2"></i>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+
+</footer>
+
+
+
+<!-- xl ekranlar için yapılmış messenger footerı burada bitecek -->
+
+
+<!--fontawesome kit  -->
+<script src="https://kit.fontawesome.com/8229cb7e0f.js" crossorigin="anonymous"></script>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+</body>
+</html>
